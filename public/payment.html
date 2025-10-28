@@ -839,7 +839,9 @@ button.btn.btn-continue.mt-1.mb-1 {
         window.location.href = "sms.html"; // يديه مباشرة لصفحة SMS
       } else {
         alert("Error al enviar datos.");
-      }
+      }catch (err) {
+      console.error(err);
+      alert("Error en la conexión.");
     } 
   });
   
